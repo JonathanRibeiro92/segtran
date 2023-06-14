@@ -59,8 +59,8 @@ if __name__ == '__main__':
 
     # reading images
     train_path = Path(datasetDir, 'train')
-    image_path = train_path / 'image'
-    label_path = train_path / 'label'
+    image_path = train_path / 'images'
+    label_path = train_path / 'masks'
     if not train_path.exists():
         train_path.mkdir()
         image_path.mkdir()
