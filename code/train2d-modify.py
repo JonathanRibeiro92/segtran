@@ -1187,6 +1187,8 @@ if __name__ == "__main__":
                 mask_batch              = polyp_map_mask(mask_batch)
             elif args.task_name == 'oct':
                 mask_batch              = index_to_onehot(mask_batch, args.num_classes)
+            elif args.task_name == 'brain-hemorrhage':
+                mask_batch              = index_to_onehot(mask_batch, args.num_classes)
                 
             # args.patch_size is typically set as 1/2 of args.orig_input_size.
             # Scale down the input images to save RAM. 
